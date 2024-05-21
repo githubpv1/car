@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="keywords" content="">
+	<meta name="description" content=" ">
+
+	<title>title</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <div class="wrapper wrapper-index">
+
+    <div class="overlay"></div>
+
+
+<header class="head" data-lock>
+
+	<div class="head__body">
+		<div class="logo">
+			<img class="logo__img" src="img/logo/logo.svg" width="330" height="129" alt="logo">
+			<a class="logo__link" href="index.html" title="на главную"></a>
+		</div>
+		<img src="img/Bosch.svg" alt="image">
+	</div>
+
+</header>
+    <main class="main">
+
+
+
+      <section class="hero mb-160">
+        <div class="container hero__top">
+          <h1 class="hero__title title-1">Діагностика. Локалізація. Кодування. Прошивка.
+            <a class="hero__link btn btn-1 icon-arrow" href="#service">Більше послуг</a>
+          </h1>
+          <div class="hero__text"></div>
+        </div>
+
+        <div class="parallax-window" data-parallax data-src="./img/1.jpg">
+          <div class="contact">
+            <p class="contact__text"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 </p>
+            <ul class="socials">
+              <li>
+                <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
+                  rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
+                </a>
+              </li>
+              <li>
+                <a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank"
+                  rel="noopener noreferrer nofollow" href="https://t.me/">
+                </a>
+              </li>
+              <li>
+                <a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank"
+                  rel="noopener noreferrer nofollow" href="viber://">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <section class="buns mb-160">
+        <div class=" container">
+          <div class="title__row row">
+            <div class="subtitle__col ">
+              <div class="subtitle">Про нас</div>
+            </div>
+            <div class="title__col ">
+              <h2 class="buns__title title-3"><span>Bosch Car Service </span> - Atlant Motors Energy — це компанія, що
+                спеціалізується на ремонті електромобілів відомих брендів! </h2>
+            </div>
+          </div>
+
+          <div class="buns__row row">
+            <div class="buns__col ">
+              <div class="buns__item">
+                <div class="buns__icon icon-bolt"></div>
+                <h4 class="buns__item-title">Швидкість</h4>
+                <p>Цінуємо ваш час. Робимо в день звернення</p>
+              </div>
+            </div>
+
+            <div class="buns__col ">
+              <div class="buns__item">
+                <div class="buns__icon icon-card"></div>
+                <h4 class="buns__item-title">Ціна</h4>
+                <p>Найкраща ціна в Україні! Не гальмуй снікерсуй</p>
+              </div>
+            </div>
+
+            <div class="buns__col ">
+              <div class="buns__item">
+                <div class="buns__icon icon-fire"></div>
+                <h4 class="buns__item-title">Якість</h4>
+                <p>Дотримуємось регламентів якості</p>
+              </div>
+            </div>
+
+            <div class="buns__col ">
+              <div class="buns__item">
+                <div class="buns__icon icon-up"></div>
+                <h4 class="buns__item-title">Зручність</h4>
+                <p>Онлайн запис на зручну дату на прошивку</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="service mb-160" id="service">
+        <div class="__container container">
+          <div class="row">
+            <div class="service__col-title">
+              <div class="service__subtitle subtitle">Наші послуги</div>
+              <h2 class="service__title title-3"> Ми готові забезпечити ваш автомобіль<span> повним спектром
+                  послуг</span>, щоб він завжди був в ідеальному стані на дорозі
+            </div>
+
+            <div class="service__col ">
+              <ol>
+
+                <li class="service__item">
+                  <div class="service__img">
+                    <img src="img/2.jpg" alt="image">
+                  </div>
+                  <div class="service__info">
+                    <h3 class="service__item-title title-3">Діагностика</h3>
+                    <p>Заміна та адаптація Євро блока</p>
+                    <span class="service__cost">1200$</span>
+                    <button class="service__btn icon-chat btn " onclick="openDialog('dialog-', this)"
+                      type="button">Замовити</button>
+                  </div>
+                </li>
+
+                <li class="service__item">
+                  <div class="service__img">
+                    <img src="img/img_2.jpg" alt="image">
+                  </div>
+                  <div class="service__info">
+                    <h3 class="service__item-title title-3">Заміна порта</h3>
+                    <p>Welcome Screen Сервісний Інтервал - та багато інших опцій</p>
+                    <span class="service__cost">NEW - 3200$</span>
+                    <span class="service__cost">USED - 2500$</span>
+                    <button class="service__btn icon-chat btn" onclick="openDialog('dialog-', this)"
+                      type="button">Замовити</button>
+                  </div>
+                </li>
+
+                <li class="service__item">
+                  <div class="service__img">
+                    <img src="img/img_2.jpg" alt="image">
+                  </div>
+                  <div class="service__info">
+                    <h3 class="service__item-title title-3">Заміна порта</h3>
+                    <p>Welcome Screen Сервісний Інтервал - та багато інших опцій</p>
+                    <span class="service__cost">По запиту</span>
+                    <button class="service__btn icon-chat btn" onclick="openDialog('dialog-', this)"
+                      type="button">Замовити</button>
+                  </div>
+                </li>
+
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- slider -->
+      <section class="review mb-160">
+        <div class="container">
+          <div class="review__img">
+            <img src="img/2.jpg" alt="image">
+          </div>
+
+          <div class="review__row row">
+            <div class="review__col-title">
+              <div class="review__control">
+                <h3 class="review__title title-3">Клієнти про нас</h3>
+                <div class="slider__control">
+                  <button class="review__prev slider__prev btn-1 icon-arrow_1"></button>
+                  <button class="review__next slider__next btn-1 icon-arrow_1"></button>
+                  <span class="paging">01 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__col-slider">
+              <div class="review__wrap-slider wrap-slider">
+                <div class="review__slider slider">
+
+                  <div>
+                    <div class="review__slide slide">
+                      <h4 class="review__slide-title">Я тепер насолоджуюся керуванням автомобілем ще більше</h4>
+                      <p>Я особливо вражений професіоналізмом та експертизою команди, яка провела українізацію. Вони
+                        були
+                        дуже уважні до моїх потреб і вимог, забезпечуючи індивідуальний підхід до мого автомобіля. Кожна
+                        деталь була уважно пророблена, щоб забезпечити максимальний комфорт та зручність.</p>
+                      <p>Після українізації прошивки, я отримав нові можливості та функції, які раніше були недоступні.
+                        Як
+                        власник Volkswagen ID.4 я тепер насолоджуюся керуванням автомобілем ще більше, оскільки він
+                        налаштований під мої потреби та вимоги.</p>
+                      <div class="slide__row row">
+                        <div class="review__col-name">
+                          <div class="review__slide-name">Іван Бондаренко</div>
+                          <div class="review__slide-city">Місто Рівне</div>
+                        </div>
+                        <div class="review__slide-car">
+                          Авто: <span>Volkswagen ID.4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="review__slide slide">
+                      <div class="review__slide-title">Я тепер насолоджуюся керуванням автомобілем ще більше</div>
+                      <p>Я особливо вражений професіоналізмом та експертизою команди, яка провела українізацію. Вони
+                        були
+                        дуже уважні до моїх потреб і вимог, забезпечуючи індивідуальний підхід до мого автомобіля. Кожна
+                        деталь була уважно пророблена, щоб забезпечити максимальний комфорт та зручність.</p>
+                      <div class="slide__row row">
+                        <div class="review__col-name">
+                          <div class="review__slide-name">Іван Бондаренко</div>
+                          <div class="review__slide-city">Місто Рівне</div>
+                        </div>
+                        <div class="review__slide-car">
+                          Авто: <span>Volkswagen ID.4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <section class="faq mb-160">
+        <div class="__container container">
+          <div class="row">
+            <div class="__col">
+              <!-- <ol class="spoiler" data-spoiler=""> -->
+              <ol class="spoiler" data-spoiler="toggle">
+                <!-- <ol class="spoiler" data-spoiler="one"> -->
+                <li class="spoiler__item ">
+                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
+                    VOLKSWAGEN ID.3 & ID.4?</button>
+                  <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
+                    залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
+                    якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
+                    послуги може стягуватися плата.</div>
+                </li>
+
+                <li class="spoiler__item ">
+                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
+                    VOLKSWAGEN ID.3 & ID.4?</button>
+                  <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
+                    залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
+                    якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
+                    послуги може стягуватися плата.</div>
+                </li>
+
+                <li class="spoiler__item">
+                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">spoiler__btn</button>
+                  <div class="spoiler__panel">spoiler__panel</div>
+                </li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- slider -->
+      <section class="report mb-160">
+        <div class="container">
+          <div class="title__row row">
+            <div class="subtitle__col ">
+              <div class="subtitle">Виконані роботи</div>
+            </div>
+            <div class="title__col ">
+              <h2 class="buns__title title-3"> Дивіться що<span> зробили вже</span>! <br>
+                Поспіши, твого авто тут не вистачає! </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="report__wrap-slider wrap-slider">
+          <div class="report__slider slider">
+            <div>
+              <div class="report__slide slide">
+                <img src="img/3.jpg" alt="image">
+                <p>Короткий опис виконаної роботи </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="report__slide slide">
+                <img src="img/4.jpg" alt="image">
+                <p>Короткий опис виконаної роботи </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="report__slide slide">
+                <img src="img/5.jpg" alt="image">
+                <p>Короткий опис виконаної роботи. Короткий опис виконаної роботи. </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="report__slide slide">
+                <img src="img/6.jpg" alt="image">
+                <p>
+                  <Короткий опис виконаної роботи/p>
+              </div>
+            </div>
+
+            <div>
+              <div class="report__slide slide">
+                <img src="img/3.jpg" alt="image">
+                <p>Короткий опис виконаної роботи. Короткий опис виконаної роботи. </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="report__slide slide">
+                <img src="img/4.jpg" alt="image">
+                <p>Короткий опис виконаної роботи </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="report__slider-control">
+            <button class="report__prev slider__prev btn-1 icon-arrow_1"></button>
+            <button class="report__next slider__next btn-1 icon-arrow_1"></button>
+          </div>
+        </div>
+
+        <div class="report__col-btn">
+          <button class="report__btn btn-1 btn icon-chat" onclick="openDialog('dialog-', this)">Звернутись за
+            консультацією</button>
+        </div>
+
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+	<div class="container">
+		<div class="footer__row row">
+
+			<div class="footer__col-title">
+				<div class="footer__title">Зв’яжіться з нами</div>
+			</div>
+
+			<div class="footer__col-contact">
+				<ul class="footer__list">
+					<li class="icon-time">
+						Пн-Сб 10:00-19:00 <br> Неділя вихідний
+					</li>
+					<li class="icon-marker">
+						<address>Софіївська Борщагівка,<br> вул. Микільська, 51</address>
+					</li>
+					<li class="icon-mail">
+						<address><a href="mailto:BCS-AME@atlantm.kh.ua">BCS-AME@atlantm.kh.ua</a></address>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__col-tel">
+				<div class="footer__title">Безкоштовна консультація</div>
+				<div class="footer__row">
+					<a class="footer__tel" href="tel:+380443334773" rel="nofollow">(099) 505-03-03 </a>
+					<ul class="socials">
+						<li>
+							<a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank" rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
+							</a>
+						</li>
+						<li>
+							<a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank" rel="noopener noreferrer nofollow" href="https://t.me/">
+							</a>
+						</li>
+						<li>
+							<a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank" rel="noopener noreferrer nofollow" href="viber://">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+
+
+			<div class="footer__col-map">
+				<a class="" href="#!">
+					<img src="img/map.jpg" alt="image">
+				</a>
+			</div>
+
+			<button class="btn-up icon-arrow_1" data-up aria-label="наверх"></button>
+			
+		</div>
+
+
+		<div class="copy">
+			<p>© atlantmotorsenergy.com.ua, 2022 | Всі права захищені</p>
+			<div class="copy__row">
+				<span>Made by</span>
+				<a href="">
+					<img src="img/i&a.svg" alt="image">
+				</a>
+			</div>
+		</div>
+
+
+</footer>
+
+
+  </div><!-- wrapper -->
+
+  <!-- <button class="" onclick="openDialog('dialog-', this)" type="button"></button> -->
+<!-- <button class="" onclick="replaceDialog('dialog-')" type="button"></button> -->
+
+<div class="dialog-backdrop" onclick="clickBtnClose(this)">
+  <div class="modal" id="dialog-" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+    
+    <button onclick="closeDialog(this)" class="modal__close icon-close" aria-label="Close">
+    </button>
+
+    <div class="modal__content">
+
+      <!-- <div class="contact"> -->
+        <p class="contact__text" id="dialog_label"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 або за телефоном (099) 505-03-03</p>
+        <ul class="socials">
+          <li>
+            <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
+              rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
+            </a>
+          </li>
+          <li>
+            <a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank"
+              rel="noopener noreferrer nofollow" href="https://t.me/">
+            </a>
+          </li>
+          <li>
+            <a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank"
+              rel="noopener noreferrer nofollow" href="viber://">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    <!-- </div> -->
+  </div>
+</div>
+
+
+
+  
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key="></script> -->
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUbEaUfsVp1EqVDmmk5o-9AGwZ39vRSy8"></script> -->
+
+
+
+<script src="js/vendor.min.js"></script>
+<!-- <script src="js/inputmask.min.js"></script>   -->
+
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
