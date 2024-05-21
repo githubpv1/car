@@ -2,22 +2,19 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="keywords" content="">
-  <meta name="description" content=" ">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="keywords" content="">
+	<meta name="description" content=" ">
 
-  <title>title</title>
+	<title>BCS-AME</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
+	<!-- favicons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
 
-  <link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
@@ -27,17 +24,17 @@
     <div class="overlay"></div>
 
 
-    <header class="head" data-lock>
+<header class="head" data-lock>
 
-      <div class="head__body">
-        <div class="logo">
-          <img class="logo__img" src="img/logo/logo.svg" width="330" height="129" alt="logo">
-          <a class="logo__link" href="index.html" title="на главную"></a>
-        </div>
-        <img src="img/Bosch.svg" alt="image">
-      </div>
+	<div class="head__body">
+		<div class="logo">
+			<img class="logo__img" src="img/logo/logo.svg" width="330" height="129" alt="logo">
+			<a class="logo__link" href="index.html" title="на главную"></a>
+		</div>
+		<img src="img/Bosch.svg" alt="image">
+	</div>
 
-    </header>
+</header>
     <main class="main">
 
 
@@ -45,7 +42,8 @@
       <section class="hero mb-160">
         <div class="container hero__top">
           <h1 class="hero__title title-1">Діагностика. Локалізація. Кодування. Прошивка.
-            <a class="hero__link btn btn-1 icon-arrow" href="#service">Більше послуг</a>
+            <a class="hero__link btn btn-1 icon-arrow" href="#service" onclick="lenis.scrollTo('#service')">Більше
+              послуг</a>
           </h1>
           <div class="hero__text"></div>
         </div>
@@ -189,8 +187,8 @@
       <!-- slider -->
       <section class="review mb-160">
         <div class="container">
-          <div class="review__img">
-            <img src="img/2.jpg" alt="image">
+          <div class="review__img" data-parallax data-src="./img/2.jpg">
+            <!-- <img src="img/2.jpg" alt="image"> -->
           </div>
 
           <div class="review__row row">
@@ -306,6 +304,10 @@
           <div class="title__row row">
             <div class="subtitle__col ">
               <div class="subtitle">Виконані роботи</div>
+              <div class="report__slider-control">
+                <button class="report__prev slider__prev btn-1 icon-arrow_1"></button>
+                <button class="report__next slider__next btn-1 icon-arrow_1"></button>
+              </div>
             </div>
             <div class="title__col ">
               <h2 class="buns__title title-3"> Дивіться що<span> зробили вже</span>! <br>
@@ -360,10 +362,7 @@
             </div>
 
           </div>
-          <div class="report__slider-control">
-            <button class="report__prev slider__prev btn-1 icon-arrow_1"></button>
-            <button class="report__next slider__next btn-1 icon-arrow_1"></button>
-          </div>
+
         </div>
 
         <div class="report__col-btn">
@@ -377,95 +376,91 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer__row row">
+	<div class="container">
+		<div class="footer__row row">
 
-          <div class="footer__col-title">
-            <div class="footer__title">Зв’яжіться з нами</div>
-          </div>
+			<div class="footer__col-title">
+				<div class="footer__title">Зв’яжіться з нами</div>
+			</div>
 
-          <div class="footer__col-contact">
-            <ul class="footer__list">
-              <li class="icon-time">
-                Пн-Сб 10:00-19:00 <br> Неділя вихідний
-              </li>
-              <li class="icon-marker">
-                <address>Софіївська Борщагівка,<br> вул. Микільська, 51</address>
-              </li>
-              <li class="icon-mail">
-                <address><a href="mailto:BCS-AME@atlantm.kh.ua">BCS-AME@atlantm.kh.ua</a></address>
-              </li>
-            </ul>
-          </div>
+			<div class="footer__col-contact">
+				<ul class="footer__list">
+					<li class="icon-time">
+						Пн-Сб 10:00-19:00 <br> Неділя вихідний
+					</li>
+					<li class="icon-marker">
+						<address>Софіївська Борщагівка,<br> вул. Микільська, 51</address>
+					</li>
+					<li class="icon-mail">
+						<address><a href="mailto:BCS-AME@atlantm.kh.ua">BCS-AME@atlantm.kh.ua</a></address>
+					</li>
+				</ul>
+			</div>
 
-          <div class="footer__col-tel">
-            <div class="footer__title">Безкоштовна консультація</div>
-            <div class="footer__row">
-              <a class="footer__tel" href="tel:+380443334773" rel="nofollow">(099) 505-03-03 </a>
-              <ul class="socials">
-                <li>
-                  <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
-                    rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
-                  </a>
-                </li>
-                <li>
-                  <a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank"
-                    rel="noopener noreferrer nofollow" href="https://t.me/">
-                  </a>
-                </li>
-                <li>
-                  <a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank"
-                    rel="noopener noreferrer nofollow" href="viber://">
-                  </a>
-                </li>
+			<div class="footer__col-tel">
+				<div class="footer__title">Безкоштовна консультація</div>
+				<div class="footer__row">
+					<a class="footer__tel" href="tel:+380443334773" rel="nofollow">(099) 505-03-03 </a>
+					<ul class="socials">
+						<li>
+							<a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank" rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
+							</a>
+						</li>
+						<li>
+							<a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank" rel="noopener noreferrer nofollow" href="https://t.me/">
+							</a>
+						</li>
+						<li>
+							<a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank" rel="noopener noreferrer nofollow" href="viber://">
+							</a>
+						</li>
 
-              </ul>
-            </div>
-          </div>
+					</ul>
+				</div>
+			</div>
 
 
 
-          <div class="footer__col-map">
-            <a class="" href="#!">
-              <img src="img/map.jpg" alt="image">
-            </a>
-          </div>
+			<div class="footer__col-map">
+				<a class="" href="#!">
+					<img src="img/map.jpg" alt="image">
+				</a>
+			</div>
 
-          <button class="btn-up icon-arrow_1" data-up aria-label="наверх"></button>
-
-        </div>
-
-
-        <div class="copy">
-          <p>© atlantmotorsenergy.com.ua, 2022 | Всі права захищені</p>
-          <div class="copy__row">
-            <span>Made by</span>
-            <a href="">
-              <img src="img/i&a.svg" alt="image">
-            </a>
-          </div>
-        </div>
+			<button class="btn-up icon-arrow_1" data-up aria-label="наверх"></button>
+			
+		</div>
 
 
-    </footer>
+		<div class="copy">
+			<p>© atlantmotorsenergy.com.ua, 2022 | Всі права захищені</p>
+			<div class="copy__row">
+				<span>Made by</span>
+				<a href="">
+					<img src="img/i&a.svg" alt="image">
+				</a>
+			</div>
+		</div>
+
+
+</footer>
 
 
   </div><!-- wrapper -->
 
   <!-- <button class="" onclick="openDialog('dialog-', this)" type="button"></button> -->
-  <!-- <button class="" onclick="replaceDialog('dialog-')" type="button"></button> -->
+<!-- <button class="" onclick="replaceDialog('dialog-')" type="button"></button> -->
 
-  <div class="dialog-backdrop" onclick="clickBtnClose(this)">
-    <div class="modal" id="dialog-" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+<div class="dialog-backdrop" onclick="clickBtnClose(this)">
+  <div class="modal" id="dialog-" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+    
+    <button onclick="closeDialog(this)" class="modal__close icon-close" aria-label="Close">
+    </button>
 
-      <button onclick="closeDialog(this)" class="modal__close icon-close" aria-label="Close">
-      </button>
+    <div class="modal__content">
 
-      <div class="modal__content">
-
-        <!-- <div class="contact"> -->
-        <p class="contact__text" id="dialog_label"><span>Безкоштовна </span> консультація та запис у зручному месенджері
-          24/7 або за телефоном (099) 505-03-03</p>
+      <!-- <div class="contact"> -->
+        <p class="contact__text" id="dialog_label"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 або за телефоном (099) 505-03-03</p>
         <ul class="socials">
           <li>
             <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
@@ -486,25 +481,24 @@
         </ul>
       </div>
 
-      <!-- </div> -->
-    </div>
+    <!-- </div> -->
   </div>
+</div>
 
 
 
+  
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key="></script> -->
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUbEaUfsVp1EqVDmmk5o-9AGwZ39vRSy8"></script> -->
 
 
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key="></script> -->
 
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUbEaUfsVp1EqVDmmk5o-9AGwZ39vRSy8"></script> -->
+<script src="js/vendor.min.js"></script>
+<!-- <script src="js/inputmask.min.js"></script>   -->
 
-
-
-  <script src="js/vendor.min.js"></script>
-  <!-- <script src="js/inputmask.min.js"></script>   -->
-
-  <script src="js/main.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
-
 </html>

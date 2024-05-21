@@ -1200,7 +1200,7 @@ p {
 }
 
 .buns__item-title {
-  font-family: var(--font-family);
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 36px;
   line-height: 130%;
@@ -1407,6 +1407,18 @@ p {
   background-color: #3973E1;
   border-radius: 30px;
   transition: .2s ease 0s;
+  transition: .2s ease 0s;
+}
+
+@media (pointer: fine) {
+  .service__btn:hover {
+    background-color: #2f60ba;
+  }
+}
+
+.review__img {
+  background: transparent;
+  aspect-ratio: 1/0.42;
 }
 
 @media (min-width: 768px) {
@@ -1584,7 +1596,7 @@ p {
   right: 15px;
   top: 0;
   height: 1px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   display: block;
 }
 
@@ -1598,9 +1610,8 @@ p {
   content: counter(num1, decimal-leading-zero) " /";
   counter-increment: num1;
   position: absolute;
-  top: 50%;
+  top: 45px;
   left: 10px;
-  transform: translateY(-50%);
 }
 
 .spoiler__item::after {
@@ -1610,7 +1621,7 @@ p {
   right: 5px;
   bottom: 0;
   height: 1px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   display: block;
 }
 
@@ -1649,8 +1660,7 @@ p {
 .spoiler__btn::before {
   position: absolute;
   right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 52px;
   font-size: 20px;
   transition: .4s ease 0s;
 }
@@ -1671,8 +1681,23 @@ p {
   padding: 0px 40px 40px 50px;
 }
 
+.subtitle__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .report__wrap-slider {
   padding-bottom: 60px;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+@media (min-width: 1200px) {
+  .report__wrap-slider {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
 }
 
 .report__slider .slick-slide {
@@ -1680,11 +1705,22 @@ p {
 }
 
 .report__slider .slick-center {
-  width: 27vw !important;
+  width: 80vw !important;
+}
+
+@media (min-width: 768px) {
+  .report__slider .slick-center {
+    width: 45vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .report__slider .slick-center {
+    width: 30vw !important;
+  }
 }
 
 .report__slider-control {
-  position: absolute;
   bottom: 0;
   left: 0;
   display: inline-flex;
