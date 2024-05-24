@@ -24,14 +24,17 @@
     <div class="overlay"></div>
 
 
-<header class="head" data-lock>
+<header class="head" id="top">
 
 	<div class="head__body">
 		<div class="logo">
 			<img class="logo__img" src="img/logo/logo.svg" width="330" height="129" alt="logo">
 			<a class="logo__link" href="index.html" title="на главную"></a>
 		</div>
-		<img src="img/Bosch.svg" alt="image">
+		<div class="head__img">
+			<img src="img/Bosch.svg" alt="image">
+		</div>
+		
 	</div>
 
 </header>
@@ -45,30 +48,33 @@
             <a class="hero__link btn btn-1 icon-arrow" href="#service" onclick="lenis.scrollTo('#service')">Більше
               послуг</a>
           </h1>
+          
           <div class="hero__text"></div>
         </div>
 
-        <div class="parallax-window" data-parallax data-src="./img/1.jpg">
-          <div class="contact">
-            <p class="contact__text"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 </p>
-            <ul class="socials">
-              <li>
-                <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
-                  rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
-                </a>
-              </li>
-              <li>
-                <a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank"
-                  rel="noopener noreferrer nofollow" href="https://t.me/">
-                </a>
-              </li>
-              <li>
-                <a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank"
-                  rel="noopener noreferrer nofollow" href="viber://">
-                </a>
-              </li>
-
-            </ul>
+        <div class="hero__wrap">
+          <div class="parallax-window" data-parallax data-src="./img/1.jpg"></div>
+          <div class="hero__wrap-contact">
+            <div class="contact">
+              <p class="contact__text"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 </p>
+              <ul class="socials">
+                <li>
+                  <a class="icon-whatsapp" style="background-color: #67CB4D;" aria-label="whatsapp" target="_blank"
+                    rel="noopener noreferrer nofollow" href="https://wa.me/380973147319">
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-telegram" style="background-color: #59AAE6;" aria-label="telegram" target="_blank"
+                    rel="noopener noreferrer nofollow" href="https://t.me/">
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-viber" style="background-color: #7061EA;" aria-label="viber" target="_blank"
+                    rel="noopener noreferrer nofollow" href="viber://">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -184,20 +190,20 @@
       </section>
 
 
-      <!-- slider -->
       <section class="review mb-160">
         <div class="container">
-          <div class="review__img" data-parallax data-src="./img/2.jpg">
-            <!-- <img src="img/2.jpg" alt="image"> -->
-          </div>
+          <div class="review__img" data-parallax data-src="./img/2.jpg"></div>
 
           <div class="review__row row">
+
             <div class="review__col-title">
-              <div class="review__control">
+              <div class="review__info">
                 <h3 class="review__title title-3">Клієнти про нас</h3>
-                <div class="slider__control">
-                  <button class="review__prev slider__prev btn-1 icon-arrow_1"></button>
-                  <button class="review__next slider__next btn-1 icon-arrow_1"></button>
+                <div class="d-flex">
+                  <div class="review__control slider__control">
+                    <button class="review__prev slider__prev btn-1 icon-arrow_1"></button>
+                    <button class="review__next slider__next btn-1 icon-arrow_1"></button>
+                  </div>
                   <span class="paging">01 / 5</span>
                 </div>
               </div>
@@ -249,6 +255,29 @@
                     </div>
                   </div>
 
+                  <div>
+                    <div class="review__slide slide">
+                      <h4 class="review__slide-title">Я тепер насолоджуюся керуванням автомобілем ще більше</h4>
+                      <p>Я особливо вражений професіоналізмом та експертизою команди, яка провела українізацію. Вони
+                        були
+                        дуже уважні до моїх потреб і вимог, забезпечуючи індивідуальний підхід до мого автомобіля. Кожна
+                        деталь була уважно пророблена, щоб забезпечити максимальний комфорт та зручність.</p>
+                      <p>Після українізації прошивки, я отримав нові можливості та функції, які раніше були недоступні.
+                        Як
+                        власник Volkswagen ID.4 я тепер насолоджуюся керуванням автомобілем ще більше, оскільки він
+                        налаштований під мої потреби та вимоги.</p>
+                      <div class="slide__row row">
+                        <div class="review__col-name">
+                          <div class="review__slide-name">Іван Бондаренко</div>
+                          <div class="review__slide-city">Місто Рівне</div>
+                        </div>
+                        <div class="review__slide-car">
+                          Авто: <span>Volkswagen ID.4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -261,44 +290,37 @@
 
 
       <section class="faq mb-160">
-        <div class="__container container">
-          <div class="row">
-            <div class="__col">
-              <!-- <ol class="spoiler" data-spoiler=""> -->
-              <ol class="spoiler" data-spoiler="toggle">
-                <!-- <ol class="spoiler" data-spoiler="one"> -->
-                <li class="spoiler__item ">
-                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
-                    VOLKSWAGEN ID.3 & ID.4?</button>
-                  <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
-                    залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
-                    якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
-                    послуги може стягуватися плата.</div>
-                </li>
 
-                <li class="spoiler__item ">
-                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
-                    VOLKSWAGEN ID.3 & ID.4?</button>
-                  <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
-                    залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
-                    якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
-                    послуги може стягуватися плата.</div>
-                </li>
+        <!-- <ol class="spoiler" data-spoiler=""> -->
+        <ol class="spoiler" data-spoiler="toggle">
+          <!-- <ol class="spoiler" data-spoiler="one"> -->
+          <li class="spoiler__item ">
+            <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
+              VOLKSWAGEN ID.3 & ID.4?</button>
+            <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
+              залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
+              якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
+              послуги може стягуватися плата.</div>
+          </li>
 
-                <li class="spoiler__item">
-                  <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">spoiler__btn</button>
-                  <div class="spoiler__panel">spoiler__panel</div>
-                </li>
-              </ol>
+          <li class="spoiler__item ">
+            <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">Що таке прошивка автомобіля
+              VOLKSWAGEN ID.3 & ID.4?</button>
+            <div class="spoiler__panel">Вартість оновлення прошивки Volkswagen ID.3 & ID.4 може варіюватися в
+              залежності від сервісного центру або дилера. Деякі оновлення можуть бути безкоштовними, особливо
+              якщо вони стосуються безпеки або гарантійних питань. Однак, за деякі покращені функції або додаткові
+              послуги може стягуватися плата.</div>
+          </li>
 
-            </div>
-          </div>
-        </div>
+          <li class="spoiler__item">
+            <button class="spoiler__btn icon-arrow" data-btn aria-expanded="false">spoiler__btn</button>
+            <div class="spoiler__panel">spoiler__panel</div>
+          </li>
+        </ol>
+
       </section>
 
 
-
-      <!-- slider -->
       <section class="report mb-160">
         <div class="container">
           <div class="title__row row">
@@ -427,13 +449,15 @@
 				</a>
 			</div>
 
-			<button class="btn-up icon-arrow_1" data-up aria-label="наверх"></button>
+			<button class="btn-up icon-arrow_1" data-up aria-label="наверх" href="#top" onclick="lenis.scrollTo('#top')"></button>
 			
 		</div>
 
 
 		<div class="copy">
-			<p>© atlantmotorsenergy.com.ua, 2022 | Всі права захищені</p>
+			<div class="copy__col">
+				<p>© atlantmotorsenergy.com.ua,<br> 2022 | Всі права захищені</p>
+			</div>
 			<div class="copy__row">
 				<span>Made by</span>
 				<a href="">
@@ -451,15 +475,14 @@
   <!-- <button class="" onclick="openDialog('dialog-', this)" type="button"></button> -->
 <!-- <button class="" onclick="replaceDialog('dialog-')" type="button"></button> -->
 
-<div class="dialog-backdrop" onclick="clickBtnClose(this)">
-  <div class="modal" id="dialog-" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+<div class="dialog-backdrop" onclick="clickBtnClose(this)" >
+  <div class="modal" data-lenis-prevent id="dialog-" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
     
     <button onclick="closeDialog(this)" class="modal__close icon-close" aria-label="Close">
     </button>
 
     <div class="modal__content">
 
-      <!-- <div class="contact"> -->
         <p class="contact__text" id="dialog_label"><span>Безкоштовна </span> консультація та запис у зручному месенджері 24/7 або за телефоном (099) 505-03-03</p>
         <ul class="socials">
           <li>
@@ -481,7 +504,6 @@
         </ul>
       </div>
 
-    <!-- </div> -->
   </div>
 </div>
 
